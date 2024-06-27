@@ -1,0 +1,347 @@
+/* CSs reset */
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+/* CSS Variables
+ */
+  
+ :root{
+    --navbar-height:49px;
+   
+ }
+/* navigation bar */
+ #navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+ }
+
+ /* navigation bar: image and logo */
+ #logo{
+
+    margin:3px 3px;
+ }
+
+ #logo img{
+    height: 100px;
+    width: 100%;
+
+    margin: 3px 3px;
+ }
+ #navbar::before{
+   content: "";
+   background-color:rgb(12, 11, 11);
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height:94%;
+   width:130%;
+   z-index:-1;
+   opacity:0.4;
+ }
+
+ #navbar ul{
+    display: flex;
+ }
+
+ #navbar ul li{
+
+    list-style: none;
+    font-size: 1.2rem;
+
+ }
+ #navbar ul li a{
+   color: black;
+   text-shadow: 3px 3px 2px red;
+   font-size: bold;
+ text-decoration: none;
+ display: block;
+ padding:4px 12px;
+ font-family:'Times New Roman', Times, serif
+
+ }
+ #navbar ul li a:hover{
+   background-color: rgb(17, 17, 17);
+   color: rgb(188, 252, 12);
+   border-radius: 30px;
+ }
+ 
+ /* section home 
+  */
+
+#home{
+   display: flex;
+   flex-direction: column;
+   height:551px;
+   padding:12px 200px;
+   justify-content: center;
+   align-items: center;
+}
+#home::before{
+   content: "";
+   background:url('../carrot.jpeg') no-repeat center center/cover;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   
+   height:598px;
+   width:100%;
+   z-index:-1;
+   opacity:0.89;
+
+}
+#home h1{
+   font-family: "Trirong", serif;
+   
+   
+}
+#home p {
+   width: 300px;
+   color:rgb(21 18 18);
+   text-align: center;
+   
+   font-size:1rem;
+   
+   
+}
+
+/* section servicss
+ */
+ #services{
+   
+   margin:-7px;
+   display: flex;
+   
+ }
+ .services-container{
+   height:340px;
+
+   
+ }
+ #services .box{
+   background-color: rgba(250, 235, 215, 0.938);
+   border:2px solid red;
+   margin :3px 3px ;
+   border-radius: 15px;
+   padding:8px;
+   margin: 0% -37% 7% 2%;
+  
+ }
+ #services .box img{
+      height:170px;
+      display: flex;
+      margin: auto;
+      
+ }
+ #services .box p{
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ h1.prm{
+   text-shadow: 3px 3px 2px red;
+   color: rgb(17, 17, 17);
+  text-align: center;
+  font-size: 1.8rem;
+  margin: -73px 7px 9px 9px;
+}
+.primary{
+   margin :80px 3px 3px 3px;
+}
+
+
+
+
+/* clients section */
+
+   #clients{
+   
+  
+      justify-content: center;
+      align-items: center;
+     
+      margin: 19px 26px 11px;
+   
+   height: 100%;
+   justify-content: center;
+   text-align: center;
+   position: relative;
+}
+#client-section::before{
+   content: '';
+   background:url('../lighter.jpeg') no-repeat center center/cover;
+
+   position: absolute;
+   left:0px;
+   height:369px;
+   width:100%;
+   z-index:-1;
+   opacity: 0.89;
+
+   
+}
+
+#clients{
+   
+  
+    justify-content: center;
+    align-items: center;
+   }
+   .client-item
+   {
+      
+      
+padding:23px;
+
+}
+
+
+#clients img{
+   height: 134px;
+
+}
+
+/* contact section */
+#CONTACT{
+   
+   text-align: center;
+   justify-content: center;
+   position: relative;
+   left: 0px;
+   font-size: 30px;
+}
+
+
+#CONTACT::before{
+   content: '';
+   background: url('../phoneim.jpeg') no-repeat center center/cover;
+   position:absolute;
+   left: 0px;
+   height: 400px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.80;
+
+
+}
+#cont-box{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   padding: 9px;
+}
+#cont-box input,
+#cont-box textarea{
+   
+   width: 100%;
+   padding: 0px 0px 0px 13px;
+   border-radius: 10px;
+   font-size: 1.4rem;
+}
+#cont-box form{
+   width:400px;
+}
+#cont-box label{
+   font-size: bold;
+
+   
+}
+footer{
+   text-align: center;
+   justify-content: center;
+   background: black;
+   color: white;
+   padding:8px;
+   margin:3px 0px;
+}
+
+/* utility class */
+h1.primary{
+   font-size:1.8rem;
+   color:rgb(15, 15, 15);
+   text-shadow: 3px 3px 2px red;
+   text-align: center;
+}
+h2{
+   font-size: 1.8rem;
+   color:rgb(240, 12, 12);
+   text-align: center;
+   font-size: 1.3rem;
+}
+
+ .btn{
+   background-color: rgb(245, 10, 10);
+   border:2px solid rgb(20, 20, 20);
+   font-size: 1.3rem;
+   border-radius: 10px;
+   color:rgb(15, 14, 14);
+   margin :10px 30px 130px 26px;
+   padding:4px 4px;
+   cursor: pointer;
+   text-shadow: 3px 3px 2px red;
+}
+.btn:hover{
+   background-color:black;
+   color:red;
+   font-size: 23px;
+}
+button#help{
+   margin:0px 0px -1px 3px;
+   padding: 8px 20px;
+   background-color: rgb(17, 16, 16);
+   color: red;
+   text-shadow: 3px 3px 2px white;
+   font-size: 17px;
+   border-radius: 20px;
+   position:absolute;
+   left: 425px;
+}
+button#help:hover{
+   font-size: 17px;
+
+   padding: 8px 20px;
+   background-color: rgb(17, 16, 16);
+   color: rgb(188, 252, 12);
+   text-shadow: 3px 3px 2px rgb(231, 8, 8);
+   
+}
+.BANK{
+  
+
+   color: brown;
+   
+
+}
+.BANK:hover{
+   
+  font-size: 4rem;
+   cursor: cell;
+   color: rgb(17, 95, 241);
+   
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.common{
+   background-color: black;
+   color: aliceblue;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2rem;
+   border:10px solid  greenyellow;
+   border-radius: 30px;
+   
+
+}
+.common:hover{
+   background-color: rgb(245, 15, 15);
+   color: aliceblue;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2rem;
+   cursor: grab;
+   border: 8px solid blue;
+   border-radius: 30px;
+   
+
+}
